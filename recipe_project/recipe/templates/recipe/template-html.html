@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Template</title>
+        <link href="{% static 'recipe/styles.css' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="prim-grid-wrapper">
+                    <div class="nav-logo">
+                        <img src="{% static 'recipe/images/recipe-logo.png' %}" alt="">
+                    </div>
+                    <div class="prim-grid-items-wrapper">
+                        <div class="prim-grid-item">Mine oppskrifter</div>
+                        <div class="prim-grid-item">Ny oppskrift</div>
+                        <div class="prim-grid-item">Blogg</div>
+                        <div class="prim-grid-item">Handleliste</div>
+                        <div class="prim-grid-item"><input autofocus type="text" class="nav-search" placeholder="  🔍︎ Søk"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <ul class="test">
+                <li>
+                    <img class="recipe-picture" src="{% static 'recipe/images/carbonara.png' %}" alt="Picture of the food made by the recipe.">
+                    <div class="recipe-title">Pasta Carbonara</div>
+                    <div class="recipe-text">Text</div>
+                </li>
+                <li></li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

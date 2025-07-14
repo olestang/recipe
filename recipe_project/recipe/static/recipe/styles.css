@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+.wrapper {
+    max-inline-size: 1300px;
+    margin-inline: auto;
+}
+
+.prim-grid-wrapper {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff8f0;
+    margin-block-start: 40px;
+    margin-block-end: 20px;
+    padding-inline: 20px;
+    border-radius: 15px;
+}
+
+.prim-grid-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: 20px;
+}
+
+body {
+    background-color: #f9e6d3;
+    margin-inline: 40px;
+}
+
+@media (width < 600px) {
+    body {
+        margin-inline: 20px;
+    }
+}
+
+.prim-grid-item {
+    font-family: "Helvetica Neue", "San Francisco", "Segoe UI", "Roboto", "sans-serif";
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.prim-grid-item:active {
+    background-color: #cbb499;
+    font-weight: 700;
+}
+
+.prim-grid-item:hover,
+.prim-grid-item:focus-visible {
+    background-color: #ecdfd0;
+    font-weight: 500;
+}
+
+.nav-logo {
+    padding: 30px;
+}
+
+.nav-search {
+    block-size: 3rem;
+    inline-size: 15rem;
+    font-size: 1.3rem;
+    border: 2px solid #f8cb88;
+    border-radius: 10px;
+}
+
+.nav-search:focus[type=text]:focus {
+  border: 3px solid #f0bf76;
+  outline: none;
+  background-color: rgb(243, 243, 243);
+}
+
+.nav-search[type=text]:focus-visible,
+.nav-search[type=text]:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+
+.test {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .test {
+        grid-template-columns: 33% 34% 33%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .test {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+.test li {
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #fffcf8;
+    font-family: 'Poppins', 'sans-serif';
+    box-shadow: 1px 1px 5px #d9bf9c;
+}
+
+.test li:focus-visible,
+.test li:hover {
+    margin: 3px;
+    box-shadow: 2px 2px 14px black;
+}
+
+.recipe-picture {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.recipe-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
